@@ -17,16 +17,22 @@ color: #212121;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
+    
 }
 .form-field {
     display: flex;
     flex-direction: column;
 
     margin-bottom: 10px;
-    
     text-align: left;
 
 }
+.form-field > label {
+  
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
 .form-field .form-input {
     height: 40px;
 
@@ -56,6 +62,7 @@ color: #212121;
     outline: none;
     transition: border-color 250ms $timing-function;
 }
+.textarea:hover,
 .textarea:focus {
     border-color: $accent-color;
 }
@@ -142,9 +149,11 @@ color: #212121;
 
     pointer-events: none;
 }
+.form-input:hover + .icon-form,
 .form-input:focus + .icon-form {
     fill: $accent-color;
 }
+.form-input:hover,
 .form-input:focus {
     border-color: $accent-color;
 }
